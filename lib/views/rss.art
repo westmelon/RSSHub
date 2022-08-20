@@ -32,7 +32,7 @@
             <title><![CDATA[{{@ $value.title }}]]></title>
             <description><![CDATA[{{@ $value.description || $value.title }}]]></description>
             {{ if $value.pubDate }}<pubDate>{{ $value.pubDate }}</pubDate>{{ /if }}
-            {{ if $value.vid }}<vid>{{ $value.vid }}</vid>{{ /if }}
+            {{ if $value.vid }}<comments>{{ $value.vid }}</comments>{{ /if }}
             <guid isPermaLink="false">{{ $value.guid || $value.link || $value.title }}</guid>
             <link>{{ $value.link }}</link>
             {{ if $value.itunes_item_image }}<itunes:image href="{{ $value.itunes_item_image }}"/>{{ /if }}
